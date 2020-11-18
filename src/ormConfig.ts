@@ -7,8 +7,8 @@ env.config();
 const orm: ConnectionOptions = {
     type: 'postgres',
     port: 5432,
-    username: process.env.DB_USERNAME,
-    password: process.env.DB_PASSWORD,
+    username: process.env.DB_USERNAME || 'postgres',
+    password: process.env.DB_PASSWORD || 'dlwpdksgo3',
     database: 'artists',
     synchronize: true,
     logging: false,
